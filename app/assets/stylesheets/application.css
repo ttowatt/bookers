@@ -17,10 +17,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: black;
 }
 
-.welcome {
-  font-family: verdana, arial, helvetica, sans-serif;
+.flash {
+  margin: 33px;
+  line-height: 18px;
+  font-size: 13px;
+  color: green;
 }
 
 .welcome {
@@ -28,12 +33,36 @@
   font-size: 13px;
 }
 
-.welcome h1 {
+ h1 {
   margin: 17px auto;
   line-height: 18px;
 }
 
 .welcome p {
+  margin: 33px;
+  line-height: 18px;
+}
+
+.index, .show, .edit {
+  margin: 33px;
+  font-size: 13px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+h2 {
+  margin: 16px 0;
+  line-height: 18px;
+}
+
+.f {
+  margin-bottom: 10px;
+}
+
+.show p {
   margin: 33px;
   line-height: 18px;
 }

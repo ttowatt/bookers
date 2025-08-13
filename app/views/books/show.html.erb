@@ -1,8 +1,10 @@
-<div>
+<div class="flash">
   <%= flash[:notice] %>
 </div>
 
-<p>Title: <%= @books.title %></p>
-<p>Body: <%= @books.body %></p>
+<div class="show">
+  <p>Title: <%= @books.title %></p>
+  <p>Body: <%= @books.body %></p>
 
-<a href= "<%= edit_book_path(id: @books.id) %>">Edit</a> | <a href= "<%= books_path %>">Back</a>
+  <a href= "<%= edit_book_path(id: @books.id) %>">Edit</a> | <a href= "<%= books_path %>">Back</a>
+</div>
