@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'bookers/books' => 'books#new'
+  resources :books
+  get 'bookers/books' => 'books#index'
+  #get 'bookers/books/new' => 'books#new'
   post 'books' => 'books#create'
-  get 'bookers/books' => 'book#index'
-  get 'bookers/books/boo' => 'books#show' #booは例
-  get 'lists/edit'
+  get 'bookers/books/:id' => 'books#show' 
+  get 'bookers/books/:id/edit' => 'books#edit'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get 'bookers' => 'homes#top'
 end
