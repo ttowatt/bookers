@@ -6,5 +6,5 @@
   <p>Title: <%= @books.title %></p>
   <p>Body: <%= @books.body %></p>
 
-  <a href= "<%= edit_book_path(id: @books.id) %>">Edit</a> | <a href= "<%= books_path %>">Back</a>
+  <%= link_to "Edit", edit_book_path(@books.id) %> | <%= link_to "Back", books_path %>
 </div>
